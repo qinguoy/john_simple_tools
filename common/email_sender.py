@@ -11,6 +11,16 @@ from_email='gxxxxxxxt@163.com'
 from_email_pwd='OKWOFSYI98ZWPBN'
 utf8_encode='utf-8'
 def send_email(to_emails:List, subject:str,body:str,is_html:bool=False,attachment_files:List=[],cc_emails:List=[]):
+    """ Sending email
+
+    Args:
+        to_emails (List): The recipients
+        subject (str): Email subject
+        body (str): Email body
+        is_html (bool, optional): Whether the body type is html . Defaults to False.
+        attachment_files (List, optional): Attachment files. Defaults to [].
+        cc_emails (List, optional): CC emails. Defaults to [].
+    """
     msg = MIMEMultipart()
     msg['From'] = from_email
     msg['To'] = ','.join(str(email) for email in to_emails)
