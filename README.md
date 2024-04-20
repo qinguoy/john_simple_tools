@@ -1,2 +1,2 @@
 # john_simple_tools
-This is some 
+This is my simple tools
